@@ -68,7 +68,7 @@ for r_commit in r_commits:
 
     if 'time' in commit:
         datet = datetime.fromtimestamp(int(commit['time']))
-        commit['date'] = datet.strftime('%d-%m-%Y')
+        commit['date'] = datet.strftime('%Y-%m-%d')
         commit['time'] = datet.strftime('%I:%M:%S %p')
     commits.append(commit)
 
